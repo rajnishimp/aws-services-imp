@@ -1,0 +1,26 @@
+1.AWS Web interface to create Lambda function: UserRegistrationLambdaV1
+ 1.1 Develop lambda function code (java or any supporting language) and build the code (code Repo:https://github.com/rajnishimp/aws-lambda-dynamodb-s3 )
+ 1.2 Login into AWS web console and open AWS lambda service.
+ 1.3 Click on create lambda function and fill the required information    
+ 1.4 Uploaded the jar file of the lambda function.
+ 1.5 Add lambda function handler class name and method name.
+ 1.6 Create Role and add into lambda function to access AWS resources s3 and dynamodb.
+   <supporting resources>
+ 1.7 Create an event(rest api) API gateway
+ 1.8 create a dynamodb table.
+ 1.9 create s3 bucket 
+
+2.AWS Resources Template:
+ 2.1 Develop lambda function code (java or any supporting language) and build the code (code Repo:https://github.com/rajnishimp/aws-lambda-dynamodb-s3 )
+ 2.2 Create cloud formation template for the lambda function and include depends on resources.
+ 2.3 Login into AWS web console and open cloud formation service 
+ 2.4 Create a stack and upload the template and cloud formation service will execute the template and create the resources 
+ 
+3.Pipeline steps
+1.create cloud formation template for the lambda function and include depends on resources.
+2. pipeline script (Jenkins or AWS code pipeline )
+  2.1 SCM Repo:https://github.com/rajnishimp/aws-lambda-dynamodb-s3
+  2.2 Build
+  2.3 Package 
+  2.4 Deploy the template on AWS cloud formation.
+    
